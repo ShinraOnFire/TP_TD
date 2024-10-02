@@ -1,0 +1,59 @@
+1)grep -En 'Odette' swann.txt | grep -o '^[0-9]*'
+
+2)grep -Ec 'Odette' swann.txt
+
+3)grep -Ec 'Gilberte' swann.txt
+
+4)grep -E -o 'Gilberte' swann.txt | wc -l
+
+5)Gilberte apparait deux fois sur une ligne. La ligne 15397 est responsable.
+
+6)grep -Ec 'Gilberte|Odette' swann.txt
+
+7)Il y a une ligne avec à la fois Gilberte et Odette
+grep -Eno 'Gilberte.*Odette|Odette.*Gilberte' swann.txt 
+Les lignes responsables sont :
+15526
+
+8)grep -Ec '\+' swann.txt
+grep -Ec '\?' swann.txt 
+
+9)grep -Ec [1-9]  swann.txt 
+
+10)grep -En z[[:lower:]] swann.txt
+
+11)grep -En z[^[:lower:]] swann.txt
+
+12)grep -En '\?$' swann.txt 
+
+13)grep -En ^[aA]b. swann.txt
+
+14)grep -En '«[^»]*$' swann.txt 
+
+
+15)151
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
